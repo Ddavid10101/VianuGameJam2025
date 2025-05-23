@@ -18,7 +18,7 @@ public class TargetRotate
     }
 
     private float CalcAngle(Vector2 RelativePosition)
-    {   Debug.Log(Mathf.Atan2(RelativePosition.y,RelativePosition.x)*Mathf.Rad2Deg);
+    {   
         return Mathf.Atan2(RelativePosition.y, RelativePosition.x) * Mathf.Rad2Deg;
     }
 
