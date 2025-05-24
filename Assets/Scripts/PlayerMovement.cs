@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        
+       
         Rotation = new TargetRotate(gameObject);
         InputManager = new GetInputs();
     }

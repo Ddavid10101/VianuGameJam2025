@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class Pistol : Weapon
 {
-    public Stats stats;
+   
     
 
-    private void Awake()
+    private void Start()
     {
         SetStats();
     }

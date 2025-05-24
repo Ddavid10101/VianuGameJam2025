@@ -29,7 +29,7 @@ public class BulletMovement : MonoBehaviour
         { Destroy(gameObject); }
     }
 
-    private void MoveBullet()
+    public void MoveBullet()
     {
         transform.Translate(Vector2.right * BulletSpeed * Time.deltaTime);
     }

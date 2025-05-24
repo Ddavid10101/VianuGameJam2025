@@ -8,7 +8,7 @@ public abstract class Weapon : MonoBehaviour
     public float AmmoClip;//
     public float ReloadSpeed;//
     public float Accuracy;//
-    public float BulletSize;
+    public float BulletSize;//
     public float Range;//
     public GameObject BulletPrefab;
     //Specific Parameters
@@ -22,19 +22,20 @@ public abstract class Weapon : MonoBehaviour
 
     
 
-    protected void SetStats()
+    public void SetStats()
     {
-        this.Damage = GeneralStats.Instance.Damage;
-        this.FireRate = GeneralStats.Instance.FireRate;
-        this.AmmoClip = GeneralStats.Instance.AmmoClip;
-        this.ReloadSpeed = GeneralStats.Instance.ReloadSpeed;
-        this.Accuracy = GeneralStats.Instance.Accuracy;
-        this.BulletSize = GeneralStats.Instance.BulletSize;
-        this.Range = GeneralStats.Instance.Range;
-        this.BulletPrefab = GeneralStats.Instance.BulletPrefab;
-        PlayerObject = GameObject.Find("Player");
-        WeaponObject = GameObject.Find("Weapon");
-        CurrentAmmo = AmmoClip;
+         this.Damage = GeneralStats.Instance.Damage;
+         this.FireRate = GeneralStats.Instance.FireRate;
+         this.AmmoClip = GeneralStats.Instance.AmmoClip;
+         this.ReloadSpeed = GeneralStats.Instance.ReloadSpeed;
+         this.Accuracy = GeneralStats.Instance.Accuracy;
+         this.BulletSize = GeneralStats.Instance.BulletSize;
+         this.Range = GeneralStats.Instance.Range;
+         this.BulletPrefab = GeneralStats.Instance.BulletPrefab;
+         PlayerObject = GameObject.Find("Player");
+         WeaponObject = GameObject.Find("Weapon");
+         CurrentAmmo = AmmoClip;
+        
     }
 
     protected void UpdateStats()
